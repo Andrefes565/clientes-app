@@ -15,6 +15,7 @@ export class ClientesListaComponent implements OnInit {
   clienteSelecionado: Cliente;
   mensagemSucesso: string;
   mensagemErro: string;
+  
 
   constructor(
     private service: ClientesService, 
@@ -29,7 +30,7 @@ export class ClientesListaComponent implements OnInit {
   }
 
   novoCadastro(){
-    this.router.navigate(['/clientes-form'])
+    this.router.navigate(['/clientes/form'])
   }
 
   preparaDelecao(cliente:Cliente) {
